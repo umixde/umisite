@@ -55,9 +55,18 @@ body {
   font-family: "TRT", sans-serif;
 }
 
-.h1 {
+.blink-text {
   font-size: 32px;
-  color: white;
-  text-align: center;
-  font-family: "TRT" , sans-serif;
+  font-family: "TRT", sans-serif;
+  animation: blink 2s infinite;
+  color:white
+}
+
+@keyframes blink {
+  0%, 100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
 }
